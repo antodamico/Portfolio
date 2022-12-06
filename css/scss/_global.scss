@@ -1,0 +1,74 @@
+// FILE PARZIALE CON PROPRIETA' UNIVERSALI, VARIABILI E MIXIN, CREATO PER EVITARE DI INTASARE IL .CSS PRINCIPALE.
+
+html, body {
+  width:100%;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+// VARIABILI PER I COLORI
+
+$primary-color: #0554f2;
+$secondary-color: #1a2873;
+
+//  FINE VARIABILI
+
+// MIXIN DI DUE GRADIENT BACKGROUND CHE SI ALTERNANO TRA LE PAGINE (IL PRIMO COMPRENDE UN PNG FIXED CHE SI MUOVE CON LA VIEWPORT),
+//  UN GRADIENT TEXT E UN'ANIMAZIONE, UTILIZZATI ENTRAMBE NELLA HOME.
+
+@mixin primary-gradient-background {
+  background: rgba(238, 238, 238, 1); /*fallback for old browser*/
+  background: linear-gradient(
+    356deg,
+    rgb(189, 187, 187) 0%,
+    rgba(238, 238, 238, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-image: url(../../immagini/assets/shapes/background.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@mixin secondary-gradient-background {
+  background: $secondary-color; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    $primary-color,
+    $secondary-color
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    $primary-color,
+    $secondary-color
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin gradient-text {
+  background: $secondary-color; /* fallback for old browsers */
+  background: -webkit-linear-gradient(left, $primary-color, $secondary-color);
+  background: linear-gradient(to left, $secondary-color, $primary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin fadein {
+  animation: secFadeIn 2s forwards;
+  opacity: 0;
+}
+
+// FINE MIXIN
+
+// KEYFRAME DELL'ANIMAZIONE "FADEIN" PRESENTE NELLA HOME
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// FINE KEYFRAME

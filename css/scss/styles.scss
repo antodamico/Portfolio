@@ -1,0 +1,110 @@
+// CSS DI RIFERIMENTO COMPILATO CON PREPROCESSORE SASS. TUTTE LE REGOLE SONO ANNIDATE PER UNA MIGLIORE COMPRENSIONE.
+// POICHE' HO PRINCIPALMENTE UTLIZZATO BOOTSTRAP PER LA REALIZZAZIONE DEL SITO PER UNA MIGLIORE STRUTTURA RESPONSIVE,
+// QUESTO CSS CONTIENE TUTTE QUELLE REGOLE CHE HANNO RICHIESTO UNA MAGGIORE PERSONALIZZAZIONE.
+
+// INIZIO SEZIONE @IMPORT
+
+@import "_global.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500&display=swap"); // GOOGLE FONT
+
+// FINE SEZIONE @IMPORT
+
+.home {
+  @include primary-gradient-background;
+
+
+
+  .firma {
+    .nome,
+    .cognome {
+      font-size: 3em;
+      
+    }
+
+    .nome { @include gradient-text;
+      text-shadow: 2px 1px 1px rgba(29, 29, 29, 0.184);}
+
+
+    .cognome {
+      text-shadow: 2px 4px 3px rgba(2, 2, 2, 0.803);
+      position: relative;
+      left: 3%;
+    }
+
+    .skills {
+      color: $primary-color;
+      text-shadow: 2px 1px 1px rgba(29, 29, 29, 0.53);
+
+      .skill-1 {
+        position: relative;
+        left: 20%;
+      }
+
+      .skill-3 {
+        position: relative;
+        left: 15%;
+      }
+
+      .fadein1 {
+        @include fadein;
+        animation-delay: 0.5s;
+      }
+
+      .fadein2 {
+        @include fadein;
+        animation-delay: 1.5s;
+      }
+
+      .fadein3 {
+        @include fadein;
+        animation-delay: 2.5s;
+      }
+    }
+  }
+}
+
+.about-me {
+  @include secondary-gradient-background;
+
+  h2 {
+    text-shadow: 1px 0px 1px gray;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+.my-skills {
+  @include primary-gradient-background;
+
+  h2 {
+    color: $primary-color;
+    text-shadow: 1px 3px 3px $secondary-color;
+  }
+}
+
+.my-works {
+  @include secondary-gradient-background;
+  text-shadow: 1px 0px 1px gray;
+  h2,
+  h3 {
+    color: $secondary-color;
+  }
+}
+
+.freelancer-section {
+  @include primary-gradient-background;
+  h2,
+  p {
+    color: $primary-color;
+    text-shadow: 1px 1px 3px rgba(58, 57, 57, 0.803);
+  }
+}
+
+.contact-me-section {
+  @include secondary-gradient-background;
+  h2 {
+    color: $secondary-color;
+    text-shadow: 1px 0px 1px gray;
+  }
+}

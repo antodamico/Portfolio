@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonio D'Amico • Full Stack Developer</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./immagini/assets/favicon/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./immagini/assets/favicon/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./immagini/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- FAVICON LINK -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <!-- BOOTSTRAP CSS LINK -->
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP JS LINK -->
+
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <!-- ICON LINK -->
+
+    <link rel="stylesheet" href="css/scss/styles.css" />
+    <!-- STYLESHEET LINK -->
+  </head>
+
+  <body>
+    <!-- INIZIO NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler ms-auto me-3 mb-1 p-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-end" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link me-2" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#my-skills">My Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#my-works">My Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="#contact-me">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- FINE NAVBAR -->
+
+    <!-- INIZIO HOME -->
+
+    <section class="home" id="home">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center">
+          <div class="col-md-5">
+            <div class="text-center mb-0">
+              <img
+                class="w-50 pt-5 mt-5 profile-pic"
+                src="immagini/profile-pic/profile-pic.png"
+                alt="profile-img" />
+            </div>
+          </div>
+
+          <div class="col-md-7 order-md-first align-self-md-center">
+            <div class="firma">
+              <h2 class="text-center text-md-start p-0 mb-0 nome">Antonio</h2>
+              <h2 class="ms-0 mb-0 me-3 text-center text-md-start text-warning cognome">D'Amico</h2>
+
+              <!--QUI HO CREATO DUE DIV CON GLI STESSI ELEMENTI, SALVO ALCUNE DIFFERENZE, PER RENDERLE PIU' ADEGUATE ALLA VIEWPORT. IN BASE AL TIPO DI DISPLAY, VIENE VISUALIZZATO UNO O L'ALTRO GRAZIE ALLA PROPRIETA' "D-NONE" -->
+              <div class="d-none d-md-block mt-4 skills">
+                <h1 class="fs-5 ms-5 skill-1 fadein2">Web Designer</h1>
+                <h1 class="fs-5 mb-4 skill-2 fadein1">Web Developer</h1>
+                <p class="fs-5 ms-5 skill-3 fadein3">Dreamer</p>
+              </div>
+              <div class="d-sm-none mt-5 text-center skills text-warning">
+                <h1 class="fs-3 fadein1">Web Designer</h1>
+                <h1 class="fs-3 fadein2">UI Designer</h1>
+                <p class="fs-3 fadein3">Dreamer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE HOME -->
+
+    <!-- INIZIO ABOUT ME -->
+
+    <section class="about-me py-5" id="about-me">
+      <div class="container-lg min-vh-100 py-5">
+        <div class="row justify-content-between my-5">
+          <div class="col-lg-7 my-5">
+            <h2 class="fs-1 fst-italic text-white mb-5">About Me</h2>
+            <p class="text-white">
+              Ciao, il mio nome è Antonio, sono un Full Stack Developer ed un
+              Web Designer con sede a Siracusa. Sono nato e cresciuto negli anni
+              '90, un periodo in cui le potenzialità del mondo digitale si
+              potevano solo intuire. Dopo aver lavorato diversi anni in
+              un'azienda a conduzione familiare, ho studiato e affinato le mie
+              competenze su
+              <a
+                class="text-warning text-decoration-none"
+                href="https://www.start2impact.it/"
+                >Start2impact University</a
+              >, la migliore piattaforma online disponibile sul territorio
+              italiano, completando il Master in Full Stack Development. Ho la
+              fortuna di poter unire lavoro e passione, amo il processo creativo
+              che si cela dietro lo sviluppo e il design di un sito web. Le
+              possibilità sono davvero infinite! Attualmente lavoro come
+              freelancer, e quando non lavoro per altri mi dedico alla creazione
+              di progetti personali. Lo sviluppo di un sito è dapprima lo
+              sviluppo di un'idea, per questo mi piace creare una comunicazione
+              chiara ed efficace per valorizzare al meglio il lavoro e i
+              prodotti dei clienti, accrescendone la Brand Awareness sia sul web
+              che sui social. Ed anche l'occhio vuole la sua parte, motivo per
+              cui è mia cura lavorare anche alla parte estetica durante la fase
+              di progettazione. Negli anni ho potenziato una buona capacità di
+              adattamento, flessibilità ed ascolto attivo, requisiti
+              fondamentali per lavorare efficacemente in team. <br />
+              Se siete interessati a creare qualcosa insieme, non esitate a
+              contattarmi sui social o compilando il form che trovate qui.
+            </p>
+
+            <!-- LA CREAZIONE DEL CV E DEL PROFILO LINKEDIN SONO IN CORSO-->
+            <div class="d-flex align-items-center mt-5">
+              <a href="#" class="btn btn-warning me-4 text-nowrap"
+                >Download my CV</a
+              >
+              <div class="ms-3 text-nowrap social">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100069955413400"
+                  class="ms-4 me-3 text-white"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/antodamico91/"
+                  class="me-3 text-white"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://twitter.com/_Antony91_" class="me-3 text-white"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="me-3 text-white"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE ABOUT ME -->
+
+    <!-- INIZIO SKILLS -->
+
+    <section class="my-skills" id="my-skills">
+      <div class="container-lg min-vh-100 pt-5">
+        <div class="row d-flex justify-content-evenly align-items-center py-5">
+          <div class="col-md-5 py-5 pb-0">
+            <h2 class="fs-1 fst-italic mb-5">My Skills</h2>
+
+            <!--BARRA HTML-->
+            <div class="skill-item mt-3 mb-4">
+              <h3 class="fs-5 d-inline-block">Html</h3>
+              <p class="d-inline-block float-end text-danger fs-5 fw-bold">
+                90%
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!--BARRA CSS-->
+            <div class="skill-item mb-4">
+              <h3 class="fs-5 d-inline-block">CSS</h3>
+              <p class="d-inline-block float-end text-danger fs-5 fw-bold">
+                65%
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  style="width: 65%"
+                  aria-valuenow="65"
+                  aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!--BARRA BOOTSTRAP-->
+            <div class="skill-item mb-4">
+              <h3 class="fs-5 d-inline-block">Bootstrap</h3>
+              <p class="d-inline-block float-end text-danger fs-5 fw-bold">
+                60%
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!--BARRA JAVASCRIPT-->
+            <div class="skill-item mb-4">
+              <h3 class="fs-5 d-inline-block">JavaScript</h3>
+              <p class="d-inline-block float-end text-danger fs-5 fw-bold">
+                5%
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  style="width: 5%"
+                  aria-valuenow="5"
+                  aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!--BARRA REACT-->
+            <div class="skill-item mb-4">
+              <h3 class="fs-5 d-inline-block">React</h3>
+              <p class="d-inline-block float-end text-danger fs-5 fw-bold">
+                0%
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  style="width: 0%"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <!--BARRA NODE.JS-->
+            <div class="skill-item mb-4">
+              <h3 class="fs-5 d-inline-block">Node.js</h3>
+              <p class="d-inline-block float-end text-danger fs-5 fw-bold">
+                0%
+              </p>
+              <div class="progress" style="height: 6px">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-label="Example 1px high"
+                  style="width: 0%"
+                  aria-valuenow="0"
+                  aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-5">
+            <div class="mt-5 d-flex justify-content-center align-items-center">
+              <img
+                class="w-100"
+                src="immagini/loghi/loghi.png"
+                alt="logo-html-css-java" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE SKILLS  -->
+
+    <!-- INIZIO PAGINA MY WORKS -->
+
+    <section class="my-works" id="my-works">
+      <!-- HO VOLUTO CREARE UNA PAGINA PER I LAVORI CHE FARO' IN FUTURO. HO UTILIZZATO UNA SERIE DI TEMPLATE FREE-COPYRIGHT PER RIEMPIRLA PROVVISORIAMENTE -->
+      <div class="container-lg h-100">
+        <div class="row h-25 justify-content-center">
+          <div class="col-lg-8 my-5">
+            <div class="section-title text-center">
+              <h2 class="fs-1 fst-italic mb-5 py-2 text-white">My Works</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row h-75">
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mb-5">
+              <img
+                src="immagini/template/shopping-landing-page.png"
+                class="mb-2 img-thumbnail"
+                alt="e-shop-page" />
+              <h3 class="text-capitalize text-white fs-5 mt-3">E-shop Page</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mb-5">
+              <img
+                src="immagini/template/company-website.png"
+                class="mb-2 img-thumbnail"
+                alt="company-page" />
+              <h3 class="text-capitalize text-white fs-5 mt-3">
+                Company Template
+              </h3>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mb-5">
+              <img
+                src="immagini/template/business-team-working.png"
+                class="mb-2 img-thumbnail"
+                alt="team-page" />
+              <h3 class="text-capitalize text-white fs-5 mt-3">Team Section</h3>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mb-5">
+              <img
+                src="immagini/template/user-interface.png"
+                class="mb-2 img-thumbnail"
+                alt="Ui-page" />
+              <h3 class="text-capitalize text-white fs-5 mt-3">UI Interface</h3>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mb-5">
+              <img
+                src="immagini/template/gradient-portfolio-template.png"
+                class="mb-2 img-thumbnail"
+                alt="portfolio-page" />
+              <h3 class="text-capitalize text-white fs-5 mt-3">Portfolio</h3>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item mb-5">
+              <img
+                src="immagini/template/web-pricing-boxes.png"
+                class="mb-2 img-thumbnail"
+                alt="pricing-page" />
+              <h3 class="text-capitalize text-white fs-5 mt-3">
+                Pricing Table
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE PAGINA MY WORKS -->
+
+    <!-- INIZIO SEZIONE FREELANCER-->
+
+    <section class="freelancer-section">
+      <div class="container-lg py-5 h-auto">
+        <div class="row justify-content-center p-3">
+          <div class="col-lg-8 text-center">
+            <p class="fs-5 fst-italic mb-3">
+              Do you want your great idea come true ?
+            </p>
+            <h2 class="fs-1 my-5 py-2 text-warning">
+              I'm Available for Freelancer Projects
+            </h2>
+            <a href="#contact-me" class="btn btn-warning p-2">Hire Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE SEZIONE FREELANCER -->
+
+    <!-- INIZIO PAGINA CONTACT ME -->
+
+    <section class="contact-me-section" id="contact-me">
+      <div class="container-lg min-vh-100 py-5">
+        <div class="row justify-content-end py-5">
+          <div class="contact py-1">
+            <h2 class="fs-1 text-end text-white mb-5">Contact Me</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 py-3">
+            <div class="contact-item d-flex">
+              <div class="icon">
+                <i class="fas fa-envelope text-white fs-3 me-4"></i>
+              </div>
+              <div class="text-white">
+                <h3 class="fs-4">Email</h3>
+                <p class="text-warning">example@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item d-flex">
+              <div class="icon">
+                <i class="fas fa-phone text-white fs-3 me-4"></i>
+              </div>
+              <div class="text-white">
+                <h3 class="fs-4">Phone</h3>
+                <p class="text-warning mb-5">335 4063 ***</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="contact-form py-3">
+              <form
+                class="contact"
+                action="mailto:anto_damico@hotmail.it"
+                method="post"
+                enctype="multipart/form-data"
+                name="EmailForm">
+                <div class="row">
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      required
+                      class="form-control form-control-lg fs-6 border-0 shadow-sm" />
+                  </div>
+                  <div class="col-lg-6 mb-4">
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      required
+                      class="form-control form-control-lg fs-6 border-0 shadow-sm" />
+                  </div>
+                  <div class="row ps-1">
+                    <div class="col-lg-12 ms-3 p-1 mb-4">
+                      <textarea
+                        rows="5"
+                        placeholder="Type your message here"
+                        required
+                        class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12 mt-3">
+                      <button type="submit" class="btn btn-warning px-3 send">
+                        Send Message
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE PAGINA CONTACT ME -->
+
+    <!-- INIZIO FOOTER -->
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-12 pt-4 text-center text-decoration-underline text-muted">
+            <p class="fs-6">&copy 2022 Antonio D'Amico</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINE FOOTER -->
+  </body>
+</html>
