@@ -12,18 +12,16 @@
 .home {
   @include primary-gradient-background;
 
-
-
   .firma {
     .nome,
     .cognome {
       font-size: 3em;
-      
     }
 
-    .nome { @include gradient-text;
-      text-shadow: 2px 1px 1px rgba(29, 29, 29, 0.184);}
-
+    .nome {
+      @include gradient-text;
+      text-shadow: 2px 1px 1px rgba(29, 29, 29, 0.184);
+    }
 
     .cognome {
       text-shadow: 2px 4px 3px rgba(2, 2, 2, 0.803);
@@ -77,9 +75,12 @@
 .my-skills {
   @include primary-gradient-background;
 
-  h2 {
+  p {
     color: $primary-color;
-    text-shadow: 1px 3px 3px $secondary-color;
+  }
+
+  .bar-height {
+    height: 6px;
   }
 }
 

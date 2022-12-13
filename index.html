@@ -4,8 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="D'Amico Antonio" />
     <title>Antonio D'Amico • Full Stack Developer</title>
 
+    <!-- Seo Tags -->
+    <meta
+      name="description"
+      content="Developer specializzato nella realizzazione di siti responsive con l'utilizzo di HTML5, CSS3 e JavaScript." />
+    <meta
+      name="keywords"
+      content="Antonio, D'Amico, Web Developer, Web Designer, Full Stack Developer, Portfolio, work, lavoro, italia, siracusa" />
+    <meta name="robots" content="nofollow" />
+
+    <!-- Open Graph Tags -->
+    <meta
+      property="og:title"
+      content="Antonio D'Amico • Full Stack Developer " />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/sDPxDDsh/og-image.png" />
+    <meta
+      property="og:url"
+      content="https://antodamico.github.io/Project-Portfolio/" />
+    <meta
+      property="og:description"
+      content="Developer specializzato nella realizzazione di siti responsive con l'utilizzo di HTML5, CSS3 e JavaScript." />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@_Antony91_" />
+    <meta
+      name="twitter:title"
+      content="Antonio D'Amico • Full Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Developer specializzato nella realizzazione di siti responsive con l'utilizzo di HTML5, CSS3 e JavaScript." />
+    <meta
+      name="twitter:image"
+      content="https://i.postimg.cc/sDPxDDsh/og-image.png" />
+
+    <!-- Favicon Links -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -20,61 +59,88 @@
       type="image/png"
       sizes="16x16"
       href="./immagini/assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <!-- FAVICON LINK -->
 
+    <!-- Bootstrap Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous" />
-    <!-- BOOTSTRAP CSS LINK -->
 
+    <!-- Bootstrap Js Link  -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"></script>
-    <!-- BOOTSTRAP JS LINK -->
 
+    <!-- Icon Link -->
     <link rel="stylesheet" href="css/font-awesome.css" />
-    <!-- ICON LINK -->
 
+    <!-- Main Stylesheet Link -->
     <link rel="stylesheet" href="css/scss/styles.css" />
-    <!-- STYLESHEET LINK -->
   </head>
 
   <body>
     <!-- INIZIO NAVBAR -->
-
-    <nav class="navbar navbar-expand-lg fixed-top bg-light shadow-sm">
+    <nav class="navbar navbar-light bg-light shadow-sm fixed-top">
       <div class="container-fluid">
-        <button
-          class="navbar-toggler ms-auto me-3 mb-1 p-2"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse text-end" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link me-2" aria-current="page" href="#home">Home</a>
+        <a class="navbar-brand"></a>
+        <div class="dropdown d-md-none">
+          <button
+            class="btn btn-primary px-3"
+            type="button"
+            id="dropdownMenuButton"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item text-end" href="#home">Home</a></li>
+            <li><a class="dropdown-item text-end" href="#about-me">About Me</a></li>
+            <li><a class="dropdown-item text-end" href="#my-skills">My Skills</a></li>
+            <li><a class="dropdown-item text-end" href="#my-works">My Works</a></li>
+            <li><a class="dropdown-item text-end" href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+        <div class="d-none d-md-block">
+          <ul class="list-group list-group-horizontal list-unstyled">
+            <li>
+              <a
+                class="fs-5 text-black-50 px-3 me-3 text-decoration-none"
+                href="#home"
+                >Home</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="#about-me">About Me</a>
+            <li>
+              <a
+                class="fs-5 text-black-50 px-3 me-3 text-decoration-none"
+                href="#about-me"
+                >About Me</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="#my-skills">My Skills</a>
+            <li>
+              <a
+                class="fs-5 text-black-50 px-3 me-3 text-decoration-none"
+                href="#my-skills"
+                >My Skills</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="#my-works">My Works</a>
+            <li>
+              <a
+                class="fs-5 text-black-50 px-3 me-3 text-decoration-none"
+                href="#my-works"
+                >My Works</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="#contact-me">Contact Me</a>
+            <li>
+              <a
+                class="fs-5 text-black-50 px-3 me-3 text-decoration-none"
+                href="#contact-me"
+                >Contact Me</a
+              >
             </li>
           </ul>
         </div>
@@ -100,7 +166,10 @@
           <div class="col-md-7 order-md-first align-self-md-center">
             <div class="firma">
               <h2 class="text-center text-md-start p-0 mb-0 nome">Antonio</h2>
-              <h2 class="ms-0 mb-0 me-3 text-center text-md-start text-warning cognome">D'Amico</h2>
+              <h2
+                class="ms-0 mb-0 me-3 text-center text-md-start text-warning cognome">
+                D'Amico
+              </h2>
 
               <!--QUI HO CREATO DUE DIV CON GLI STESSI ELEMENTI, SALVO ALCUNE DIFFERENZE, PER RENDERLE PIU' ADEGUATE ALLA VIEWPORT. IN BASE AL TIPO DI DISPLAY, VIENE VISUALIZZATO UNO O L'ALTRO GRAZIE ALLA PROPRIETA' "D-NONE" -->
               <div class="d-none d-md-block mt-4 skills">
@@ -127,7 +196,7 @@
       <div class="container-lg min-vh-100 py-5">
         <div class="row justify-content-between my-5">
           <div class="col-lg-7 my-5">
-            <h2 class="fs-1 fst-italic text-white mb-5">About Me</h2>
+            <p class="fs-1 fst-italic text-white mb-5">About Me</p>
             <p class="text-white">
               Ciao, il mio nome è Antonio, sono un Full Stack Developer ed un
               Web Designer con sede a Siracusa. Sono nato e cresciuto negli anni
@@ -136,7 +205,8 @@
               un'azienda a conduzione familiare, ho studiato e affinato le mie
               competenze su
               <a
-                class="text-warning text-decoration-none"
+                class="text-warning fw-bold text-decoration-none"
+                target="_blank"
                 href="https://www.start2impact.it/"
                 >Start2impact University</a
               >, la migliore piattaforma online disponibile sul territorio
@@ -158,26 +228,37 @@
               contattarmi sui social o compilando il form che trovate qui.
             </p>
 
-            <!-- LA CREAZIONE DEL CV E DEL PROFILO LINKEDIN SONO IN CORSO-->
+            <!-- LA CREAZIONE DEL CV E' IN CORSO-->
             <div class="d-flex align-items-center mt-5">
-              <a href="#" class="btn btn-warning me-4 text-nowrap"
-                >Download my CV</a
+              <a
+                href="https://www.linkedin.com/in/antonio-d-amico-27004b25a/"
+                class="btn btn-warning me-4 text-nowrap"
+                target="_blank"
+                >View my CV</a
               >
               <div class="ms-3 text-nowrap social">
                 <a
                   href="https://www.facebook.com/profile.php?id=100069955413400"
+                  target="_blank"
                   class="ms-4 me-3 text-white"
                   ><i class="fab fa-facebook-f"></i
                 ></a>
                 <a
                   href="https://www.instagram.com/antodamico91/"
+                  target="_blank"
                   class="me-3 text-white"
                   ><i class="fab fa-instagram"></i
                 ></a>
-                <a href="https://twitter.com/_Antony91_" class="me-3 text-white"
+                <a
+                  href="https://twitter.com/_Antony91_"
+                  target="_blank"
+                  class="me-3 text-white"
                   ><i class="fab fa-twitter"></i
                 ></a>
-                <a href="#" class="me-3 text-white"
+                <a
+                  href="https://www.linkedin.com/in/antonio-d-amico-27004b25a/"
+                  class="me-3 text-white"
+                  target="_blank"
                   ><i class="fab fa-linkedin-in"></i
                 ></a>
               </div>
@@ -195,7 +276,7 @@
       <div class="container-lg min-vh-100 pt-5">
         <div class="row d-flex justify-content-evenly align-items-center py-5">
           <div class="col-md-5 py-5 pb-0">
-            <h2 class="fs-1 fst-italic mb-5">My Skills</h2>
+            <p class="fs-1 fw-bold fst-italic mb-5">My Skills</p>
 
             <!--BARRA HTML-->
             <div class="skill-item mt-3 mb-4">
@@ -203,7 +284,7 @@
               <p class="d-inline-block float-end text-danger fs-5 fw-bold">
                 90%
               </p>
-              <div class="progress" style="height: 6px">
+              <div class="progress bar-height">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -221,7 +302,7 @@
               <p class="d-inline-block float-end text-danger fs-5 fw-bold">
                 65%
               </p>
-              <div class="progress" style="height: 6px">
+              <div class="progress bar-height">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -239,7 +320,7 @@
               <p class="d-inline-block float-end text-danger fs-5 fw-bold">
                 60%
               </p>
-              <div class="progress" style="height: 6px">
+              <div class="progress bar-height">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -257,7 +338,7 @@
               <p class="d-inline-block float-end text-danger fs-5 fw-bold">
                 5%
               </p>
-              <div class="progress" style="height: 6px">
+              <div class="progress bar-height">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -275,7 +356,7 @@
               <p class="d-inline-block float-end text-danger fs-5 fw-bold">
                 0%
               </p>
-              <div class="progress" style="height: 6px">
+              <div class="progress bar-height">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -293,7 +374,7 @@
               <p class="d-inline-block float-end text-danger fs-5 fw-bold">
                 0%
               </p>
-              <div class="progress" style="height: 6px">
+              <div class="progress bar-height">
                 <div
                   class="progress-bar"
                   role="progressbar"
@@ -328,7 +409,7 @@
         <div class="row h-25 justify-content-center">
           <div class="col-lg-8 my-5">
             <div class="section-title text-center">
-              <h2 class="fs-1 fst-italic mb-5 py-2 text-white">My Works</h2>
+              <p class="fs-1 fst-italic mb-5 py-2 text-white">My Works</p>
             </div>
           </div>
         </div>
@@ -350,7 +431,7 @@
                 class="mb-2 img-thumbnail"
                 alt="company-page" />
               <h3 class="text-capitalize text-white fs-5 mt-3">
-                Company Template
+                Company Website
               </h3>
             </div>
           </div>
@@ -408,11 +489,11 @@
       <div class="container-lg py-5 h-auto">
         <div class="row justify-content-center p-3">
           <div class="col-lg-8 text-center">
-            <p class="fs-5 fst-italic text-warning mb-3">
+            <p class="fs-5 fst-italic text-primary mb-3">
               Vuoi che la tua grande idea diventi realtà?
             </p>
             <h2 class="fs-1 my-5 py-2 text-warning">
-              Sono disponibile come freelancer!
+              Disponibile come Freelancer!
             </h2>
             <a href="#contact-me" class="btn btn-warning p-2">Contattami</a>
           </div>
@@ -428,7 +509,7 @@
       <div class="container-lg min-vh-100 py-5">
         <div class="row justify-content-end py-5">
           <div class="contact py-1">
-            <h2 class="fs-1 text-end text-white mb-5">Contact Me</h2>
+            <p class="fs-1 text-end text-white mb-5">Contact Me</p>
           </div>
         </div>
 
@@ -449,7 +530,7 @@
               </div>
               <div class="text-white">
                 <h3 class="fs-4">Phone</h3>
-                <p class="text-warning mb-5">335 4063 ***</p>
+                <p class="text-warning mb-5">123 *** ***</p>
               </div>
             </div>
           </div>
@@ -457,9 +538,8 @@
           <div class="col-md-7">
             <div class="contact-form py-3">
               <form
-                class="contact"
-                action="https://formsubmit.co/anto_damico@hotmail.it" method="POST"
-                <name="EmailForm">
+                action="https://formsubmit.co/anto_damico@hotmail.it"
+                method="POST">
                 <div class="row">
                   <div class="col-lg-6 mb-4">
                     <input
@@ -472,18 +552,17 @@
                   <div class="col-lg-6 mb-4">
                     <input
                       type="email"
-                      name="email"     
+                      name="email"
                       placeholder="Your Email"
                       required
                       class="form-control form-control-lg fs-6 border-0 shadow-sm" />
                   </div>
                   <div class="row ps-1">
                     <div class="col-lg-12 ms-3 p-1 mb-4">
-                      <input
                       <textarea
                         name="message"
-                        rows="5"
                         placeholder="Type your message here"
+                        rows="5"
                         required
                         class="form-control form-control-lg fs-6 border-0 shadow-sm"></textarea>
                     </div>
